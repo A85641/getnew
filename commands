@@ -1,0 +1,500 @@
+    2  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+    3  $ ls -lrt
+    4  total 0
+    5  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log1.txt
+    6  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log2.txt
+    7  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log3.txt
+    8  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log4.txt
+    9  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log5.txt
+   10  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   11  $ touch adi{1..12}.txt
+   12  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   13  $ git status
+   14  On branch feature_4
+   15  Untracked files:
+   16    (use "git add <file>..." to include in what will be committed)
+   17          adi1.txt
+   18          adi10.txt
+   19          adi11.txt
+   20          adi12.txt
+   21          adi2.txt
+   22          adi3.txt
+   23          adi4.txt
+   24          adi5.txt
+   25          adi6.txt
+   26          adi7.txt
+   27          adi8.txt
+   28          adi9.txt
+   29  nothing added to commit but untracked files present (use "git add" to track)
+   30  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   31  $ git add *
+   32  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   33  $ git commit -m "its fourth commit"
+   34  [feature_4 18f53d8] its fourth commit
+   35   12 files changed, 0 insertions(+), 0 deletions(-)
+   36   create mode 100644 adi1.txt
+   37   create mode 100644 adi10.txt
+   38   create mode 100644 adi11.txt
+   39   create mode 100644 adi12.txt
+   40   create mode 100644 adi2.txt
+   41   create mode 100644 adi3.txt
+   42   create mode 100644 adi4.txt
+   43   create mode 100644 adi5.txt
+   44   create mode 100644 adi6.txt
+   45   create mode 100644 adi7.txt
+   46   create mode 100644 adi8.txt
+   47   create mode 100644 adi9.txt
+   48  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   49  $ git log
+   50  commit 18f53d819538f9df735a53c009cc5d303a270870 (HEAD -> feature_4)
+   51  Author: AKHILESH <akhilesh.b.n@gmail.com>
+   52  Date:   Tue Jul 30 11:32:14 2019 -0700
+   53      its fourth commit
+   54  commit 8f1e2f1f6533e4004891223220c2572c23e50f0e (master)
+   55  Author: AKHILESH <akhilesh.b.n@gmail.com>
+   56  Date:   Tue Jul 30 11:03:44 2019 -0700
+   57      its a first commit
+   58  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   59  $ git tag -a "R2019.30.07V"
+   60  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   61  $ ls -lrt
+   62  total 0
+   63  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log1.txt
+   64  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log2.txt
+   65  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log3.txt
+   66  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log4.txt
+   67  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log5.txt
+   68  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi1.txt
+   69  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi2.txt
+   70  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi3.txt
+   71  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi4.txt
+   72  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi5.txt
+   73  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi6.txt
+   74  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi7.txt
+   75  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi8.txt
+   76  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi9.txt
+   77  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi10.txt
+   78  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi11.txt
+   79  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi12.txt
+   80  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (feature_4)
+   81  $ git checkout R2019.30.07v
+   82  Note: checking out 'R2019.30.07v'.
+   83  You are in 'detached HEAD' state. You can look around, make experimental
+   84  changes and commit them, and you can discard any commits you make in this
+   85  state without impacting any branches by performing another checkout.
+   86  If you want to create a new branch to retain commits you create, you may
+   87  do so (now or later) by using -b with the checkout command again. Example:
+   88    git checkout -b <new-branch-name>
+   89  HEAD is now at 18f53d8 its fourth commit
+   90  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+   91  $ touch chi{1..10}.doc
+   92  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+   93  $ git status
+   94  HEAD detached at R2019.30.07v
+   95  Untracked files:
+   96    (use "git add <file>..." to include in what will be committed)
+   97          chi1.doc
+   98          chi10.doc
+   99          chi2.doc
+  100          chi3.doc
+  101          chi4.doc
+  102          chi5.doc
+  103          chi6.doc
+  104          chi7.doc
+  105          chi8.doc
+  106          chi9.doc
+  107  nothing added to commit but untracked files present (use "git add" to track)
+  108  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+  109  $ git add *
+  110  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+  111  $ git status
+  112  HEAD detached at R2019.30.07v
+  113  Changes to be committed:
+  114    (use "git reset HEAD <file>..." to unstage)
+  115          new file:   chi1.doc
+  116          new file:   chi10.doc
+  117          new file:   chi2.doc
+  118          new file:   chi3.doc
+  119          new file:   chi4.doc
+  120          new file:   chi5.doc
+  121          new file:   chi6.doc
+  122          new file:   chi7.doc
+  123          new file:   chi8.doc
+  124          new file:   chi9.doc
+  125  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+  126  $ git commit -m "its new commit at tag"
+  127  [detached HEAD 46d1bcb] its new commit at tag
+  128   10 files changed, 0 insertions(+), 0 deletions(-)
+  129   create mode 100644 chi1.doc
+  130   create mode 100644 chi10.doc
+  131   create mode 100644 chi2.doc
+  132   create mode 100644 chi3.doc
+  133   create mode 100644 chi4.doc
+  134   create mode 100644 chi5.doc
+  135   create mode 100644 chi6.doc
+  136   create mode 100644 chi7.doc
+  137   create mode 100644 chi8.doc
+  138   create mode 100644 chi9.doc
+  139  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((46d1bcb...))
+  140  $ ls -lrt
+  141  total 0
+  142  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log1.txt
+  143  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log2.txt
+  144  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log3.txt
+  145  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log4.txt
+  146  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log5.txt
+  147  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi1.txt
+  148  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi2.txt
+  149  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi3.txt
+  150  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi4.txt
+  151  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi5.txt
+  152  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi6.txt
+  153  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi7.txt
+  154  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi8.txt
+  155  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi9.txt
+  156  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi10.txt
+  157  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi11.txt
+  158  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:31 adi12.txt
+  159  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi1.doc
+  160  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi2.doc
+  161  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi3.doc
+  162  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi4.doc
+  163  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi5.doc
+  164  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi6.doc
+  165  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi7.doc
+  166  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi8.doc
+  167  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi9.doc
+  168  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:34 chi10.doc
+  169  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((46d1bcb...))
+  170  $ git checkout master
+  171  Warning: you are leaving 1 commit behind, not connected to
+  172  any of your branches:
+  173    46d1bcb its new commit at tag
+  174  If you want to keep it by creating a new branch, this may be a good time
+  175  to do so with:
+  176   git branch <new-branch-name> 46d1bcb
+  177  Switched to branch 'master'
+  178  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  179  $ git 46d1bcd
+  180  git: '46d1bcd' is not a git command. See 'git --help'.
+  181  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  182  $ ls -lrt |wc-l
+  183  bash: wc-l: command not found
+  184  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  185  $ ls -lrt | wc -l
+  186  6
+  187  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  188  $ ls -lrt
+  189  total 0
+  190  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log1.txt
+  191  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log2.txt
+  192  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log3.txt
+  193  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log4.txt
+  194  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log5.txt
+  195  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  196  $ git checkout R2019.30.07v
+  197  Note: checking out 'R2019.30.07v'.
+  198  You are in 'detached HEAD' state. You can look around, make experimental
+  199  changes and commit them, and you can discard any commits you make in this
+  200  state without impacting any branches by performing another checkout.
+  201  If you want to create a new branch to retain commits you create, you may
+  202  do so (now or later) by using -b with the checkout command again. Example:
+  203    git checkout -b <new-branch-name>
+  204  HEAD is now at 18f53d8 its fourth commit
+  205  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+  206  $ ls -lrt |wc -l
+  207  18
+  208  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya ((R2019.30.07V))
+  209  $ git checkout master
+  210  Previous HEAD position was 18f53d8 its fourth commit
+  211  Switched to branch 'master'
+  212  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  213  $ git remote add origin"https://github.com/A85641/newgit.git"
+  214  usage: git remote add [<options>] <name> <url>
+  215      -f, --fetch           fetch the remote branches
+  216      --tags                import all tags and associated objects when fetching
+  217                            or do not fetch any tag at all (--no-tags)
+  218      -t, --track <branch>  branch(es) to track
+  219      -m, --master <branch>
+  220                            master branch
+  221      --mirror[=(push|fetch)]
+  222                            set up remote as a mirror to push to or fetch from
+  223  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  224  $ git pull origin master
+  225  fatal: 'origin' does not appear to be a git repository
+  226  fatal: Could not read from remote repository.
+  227  Please make sure you have the correct access rights
+  228  and the repository exists.
+  229  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  230  $ ls -lrt
+  231  total 0
+  232  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log1.txt
+  233  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log2.txt
+  234  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log3.txt
+  235  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log4.txt
+  236  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log5.txt
+  237  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  238  $ git remote add origin"https://github.com/A85641/newgit.git"
+  239  usage: git remote add [<options>] <name> <url>
+  240      -f, --fetch           fetch the remote branches
+  241      --tags                import all tags and associated objects when fetching
+  242                            or do not fetch any tag at all (--no-tags)
+  243      -t, --track <branch>  branch(es) to track
+  244      -m, --master <branch>
+  245                            master branch
+  246      --mirror[=(push|fetch)]
+  247                            set up remote as a mirror to push to or fetch from
+  248  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  249  $ git remote add origin master""
+  250  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  251  $ git remote add origin master""
+  252  fatal: remote origin already exists.
+  253  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  254  $ git remote add origin master"
+  255  >
+  256  > bash: unexpected EOF while looking for matching `"'
+  257  bash: syntax error: unexpected end of file
+  258  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  259  $ git remote add origin master"https://github.com/A85641/newgit.git"
+  260  fatal: remote origin already exists.
+  261  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  262  $ git pull origin master
+  263  fatal: 'master' does not appear to be a git repository
+  264  fatal: Could not read from remote repository.
+  265  Please make sure you have the correct access rights
+  266  and the repository exists.
+  267  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  268  $ git branch
+  269    feature_1
+  270    feature_2
+  271    feature_3
+  272    feature_4
+  273  * master
+  274  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  275  $ git tag
+  276  R2019.30.07
+  277  R2019.30.07V
+  278  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  279  $ git merge feature_1 feature_2 feature_3 feature_4
+  280  Fast-forwarding to: feature_3
+  281  Trying simple merge with feature_4
+  282  Merge made by the 'octopus' strategy.
+  283   adi1.txt  | 0
+  284   adi10.txt | 0
+  285   adi11.txt | 0
+  286   adi12.txt | 0
+  287   adi2.txt  | 0
+  288   adi3.txt  | 0
+  289   adi4.txt  | 0
+  290   adi5.txt  | 0
+  291   adi6.txt  | 0
+  292   adi7.txt  | 0
+  293   adi8.txt  | 0
+  294   adi9.txt  | 0
+  295   akhi1     | 0
+  296   akhi2     | 0
+  297   akhi3     | 0
+  298   akhi4     | 0
+  299   akhi5     | 0
+  300   tech1.doc | 0
+  301   tech2.doc | 0
+  302   tech3.doc | 0
+  303   tech4.doc | 0
+  304   tech5.doc | 0
+  305   tech6.doc | 0
+  306   tech7.doc | 0
+  307   24 files changed, 0 insertions(+), 0 deletions(-)
+  308   create mode 100644 adi1.txt
+  309   create mode 100644 adi10.txt
+  310   create mode 100644 adi11.txt
+  311   create mode 100644 adi12.txt
+  312   create mode 100644 adi2.txt
+  313   create mode 100644 adi3.txt
+  314   create mode 100644 adi4.txt
+  315   create mode 100644 adi5.txt
+  316   create mode 100644 adi6.txt
+  317   create mode 100644 adi7.txt
+  318   create mode 100644 adi8.txt
+  319   create mode 100644 adi9.txt
+  320   create mode 100644 akhi1
+  321   create mode 100644 akhi2
+  322   create mode 100644 akhi3
+  323   create mode 100644 akhi4
+  324   create mode 100644 akhi5
+  325   create mode 100644 tech1.doc
+  326   create mode 100644 tech2.doc
+  327   create mode 100644 tech3.doc
+  328   create mode 100644 tech4.doc
+  329   create mode 100644 tech5.doc
+  330   create mode 100644 tech6.doc
+  331   create mode 100644 tech7.doc
+  332  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  333  $ ls -lrt
+  334  total 0
+  335  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log1.txt
+  336  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log2.txt
+  337  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log3.txt
+  338  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log4.txt
+  339  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:01 log5.txt
+  340  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 akhi4
+  341  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 akhi3
+  342  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 akhi2
+  343  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 akhi1
+  344  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech7.doc
+  345  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech6.doc
+  346  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech5.doc
+  347  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech4.doc
+  348  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech3.doc
+  349  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech2.doc
+  350  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 tech1.doc
+  351  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 akhi5
+  352  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi11.txt
+  353  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi10.txt
+  354  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi1.txt
+  355  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi9.txt
+  356  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi8.txt
+  357  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi7.txt
+  358  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi6.txt
+  359  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi5.txt
+  360  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi4.txt
+  361  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi3.txt
+  362  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi2.txt
+  363  -rw-r--r-- 1 AKHILESH B N 197121 0 Jul 30 11:52 adi12.txt
+  364  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  365  $ git push --all
+  366  fatal: 'master' does not appear to be a git repository
+  367  fatal: Could not read from remote repository.
+  368  Please make sure you have the correct access rights
+  369  and the repository exists.
+  370  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  371  $ git pull --all
+  372  Fetching origin
+  373  fatal: 'master' does not appear to be a git repository
+  374  fatal: Could not read from remote repository.
+  375  Please make sure you have the correct access rights
+  376  and the repository exists.
+  377  error: Could not fetch origin
+  378  AKHILESH B N@DESKTOP-4568JN7 MINGW64 ~/hrudya (master)
+  379  $ git clone "
+  380  cd
+  381  mkdir chaitra
+  382  cd chaitra
+  383  touch log{1..10}.txt
+  384  ls -lrt
+  385  cat > akhil
+  386  ll
+  387  ls -lrt
+  388  date
+  389  cat >> akhil
+  390  cat cat akhil
+  391  mv akhil unix
+  392  ls -lrt
+  393  cat unix
+  394  cp unix akhil
+  395  ls -lrt
+  396  cat akhil
+  397  whoam i
+  398  who
+  399  whoiami
+  400  whoiami
+  401  ehoiam
+  402  whoiam
+  403  whoami
+  404  pwd
+  405  cd ~
+  406  ls ???
+  407  cd cahitra
+  408  cd chaitra
+  409  ls ???
+  410  ls ????
+  411  mkdir super{1..6}
+  412  ls -lrt
+  413  ls -d */
+  414  logname
+  415  user
+  416  echo hi akhilesh
+  417  ls -lrt |wc -l
+  418  vi akhi.sh
+  419  sh akhi.sh
+  420  vi akhi.sh
+  421  sh akhi.sh
+  422  ps -a
+  423  ps -ef
+  424  df -h
+  425  df -kh
+  426  vi akhi.sh
+  427  sh akhi.sh
+  428  vi akhi.sh
+  429  sh akhi.sh
+  430  vi akhi.sh
+  431  sh akhi.sh
+  432  cd
+  433  cd ng
+  434  mkdir acchu
+  435  ls -lrt
+  436  cd acchu
+  437  git init
+  438  git remote add origin"https://github.com/A85641/getnew.git"
+  439  git pull origin master
+  440  touch log{1..12}.txt
+  441  git status
+  442  git add *
+  443  git commit -m "its first commit"
+  444  git push --all
+  445  git remote add acchu "https://github.com/A85641/getnew.git"
+  446  git push --all
+  447  git push acchu
+  448  git push --acchu
+  449  git push
+  450  git remote add origin "https://github.com/A85641/getnew.git"
+  451  git pull origin master
+  452  ls -lrt
+  453  git branch feature_1
+  454  git checkout feature_1 
+  455  ls -lrt
+  456  touch akhi{1..10}.doc
+  457  ls -lrt
+  458  git status
+  459  git add *
+  460  git commit -m "its second commit" 
+  461  git log
+  462  git tag -a "R2019.07.31"
+  463  git checkout tag R2019.07.31 
+  464  git checkout R2019.07.31 
+  465  ls -lrt
+  466  touch acchu{1..7}.txt
+  467  git status
+  468  git add *
+  469  git commit -m "its a tag for math operatio"
+  470  git checkout -b feature_3
+  471  ls -lrt
+  472  ls -lrt|wc -l
+  473  touch bandli{1..6}.doc
+  474  ls -lrt
+  475  git status
+  476  git add *
+  477  git commit -m "its a commit file for 3"
+  478  git checkout R2019.07.31 
+  479  ls -lrt
+  480  ls -lrt|wc -l
+  481  git checkout master
+  482  git merge feature_1 feature_2 feature_3
+  483  git branch
+  484  git merge feature_1 feature_3
+  485  ls -lrt
+  486  ls -lrt |wc -l
+  487  git push --all
+  488  git push tag
+  489  git push --tag
+  490  git pull
+  491  ls -lrt
+  492  touch chetha 
+  493  git status
+  494  git add *
+  495  git commit -m "chetha commit"
+  496  git push
+  497  git push --all
+  498  git push origin master --force
+  499  git log
+  500  history
+  501  history > commands
